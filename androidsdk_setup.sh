@@ -31,3 +31,5 @@ cd /opt/android-sdk-linux/tools/bin
 echo 'export PATH=$PATH:/opt/android-sdk-linux/tools/bin' >> /etc/profile.d/android.sh
 echo 'export ANDROID_TOOLS=/opt/android-sdk-linux' >> /etc/profile.d/android.sh
 source /etc/profile.d/android.sh
+chown -R ubuntu:ubuntu /opt/android-sdk-linux
+sdkmanager "platforms;android-28" "build-tools;28.0.3"
